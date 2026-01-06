@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alma Ibérica | Jamonería Boutique</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Lato', sans-serif; }
+        h1, h2 { font-family: 'Playfair Display', serif; }
+        .bg-jamon { background-color: #4a0404; }
+        .text-oro { color: #c5a059; }
+        .border-oro { border-color: #c5a059; }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-900">
+
+    <nav class="bg-jamon text-white p-6 shadow-xl">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold tracking-widest text-oro">ALMA IBÉRICA</h1>
+            <div class="space-x-6 hidden md:block">
+                <a href="#inicio" class="hover:text-oro transition">Inicio</a>
+                <a href="#productos" class="hover:text-oro transition">Productos</a>
+                <a href="#contacto" class="hover:text-oro transition">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="inicio" class="relative h-[70vh] flex items-center justify-center text-center text-white">
+        <div class="absolute inset-0 bg-black/50 z-10"></div>
+        <img src="https://images.unsplash.com/photo-1627664819818-e147d6221422?auto=format&fit=crop&q=80&w=1600" class="absolute inset-0 w-full h-full object-cover" alt="Jamón Ibérico">
+        <div class="relative z-20 px-4">
+            <h2 class="text-5xl md:text-7xl mb-4 italic">El arte del corte</h2>
+            <p class="text-xl md:text-2xl font-light max-w-2xl mx-auto">La esencia de la dehesa seleccionada pieza a pieza para los paladares más exigentes.</p>
+        </div>
+    </header>
+
+    <section id="productos" class="py-20 container mx-auto px-4">
+        <h2 class="text-4xl text-center mb-16 underline decoration-oro underline-offset-8">Nuestras Joyas</h2>
+        <div class="grid md:grid-cols-3 gap-10">
+            <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-oro">
+                <h3 class="text-2xl mb-3 text-jamon font-bold">Jamón de Bellota</h3>
+                <p class="text-stone-600">100% Ibérico. Piezas curadas durante más de 48 meses en bodegas naturales.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-oro">
+                <h3 class="text-2xl mb-3 text-jamon font-bold">Embutidos Nobles</h3>
+                <p class="text-stone-600">Lomo doblado, salchichón y chorizo de orza elaborados artesanalmente.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-oro">
+                <h3 class="text-2xl mb-3 text-jamon font-bold">Quesos de Autor</h3>
+                <p class="text-stone-600">Selección premium de quesos de oveja y cabra de producción limitada.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="bg-jamon text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl mb-8 text-oro">Visítanos en Sant Boi</h2>
+            <p class="text-xl mb-4">Calle de la Dehesa, 12, Sant Boi de Llobregat</p>
+            <p class="text-stone-400 mb-8 italic">Abierto de Lunes a Sábado de 10:00 a 20:30</p>
+            <a href="mailto:hola@almaiberica.com" class="inline-block bg-oro text-jamon px-8 py-3 rounded-full font-bold hover:bg-white transition duration-300">Solicitar Información</a>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-stone-500 text-sm">
+        &copy; 2024 Alma Ibérica. Pasión por la tradición.
+    </footer>
+
+</body>
+</html>
